@@ -4,24 +4,7 @@ import { motion } from "framer-motion";
 export const Hero = () => {
     return (
         <section>
-            {/* <div className="container max-w-4xl mx-auto text-center z-10">
-                <div className="space-y-6">
-                    <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
-                        <span className="opacity-0 animate-fade-in"> Hi, I'm</span>
-                        <span className="text-primary opacity-0 animate-fade-in-delay-1"> Galav</span>
-                        <span className="text-primary opacity-0 animate-fade-in-delay-2"> Sharma</span>
-                    </h1>
-
-                    <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto opacity-0 animate-fade-in-delay-4">
-                        Write a good BIO for landing page
-                    </p>
-
-                </div>
-                <div className="absolute bottom-8 left-1/2 transform -translate-1/2 flex flex-col items-center animate-bounce">
-                    <ArrowBigDown className="h-5 w-5 text-primary" />
-                </div>
-
-            </div> */}
+            
             <div className="container max-w-xl mx-auto text-center z-10">
                 <div className="absolute flex left-1/2 -translate-1/2 w-[75%] max-h-[80%] md:h-[60%]">
 
@@ -41,13 +24,11 @@ export const Hero = () => {
                             </h1>
 
                             <p className="text-md md:text-xl text-muted-foreground max-w-2xl mt-6 md:mt-15 mx-auto">
-                                <motion.span className="text-glow" initial={{ opacity: 0, translateY: "20px" }} whileInView={{ opacity: 1, translateY: 0 }} transition={{ duration: 0.7, delay: 1.8 }}>I build technology that makes life easier, turning ambitious ideas into AI, robotics, and full-stack solutions.</motion.span>
-                                {/* <motion.span className="text-glow" initial={{ opacity: 0, translateY: "20px" }} whileInView={{ opacity: 1, translateY: 0 }} transition={{ duration: 0.7, delay: 1.8 }}>A software engineer passionate about creating impactful solutions in AI, robotics, and software development.</motion.span> */}
-
+                                <motion.span className="text-glow" initial={{ opacity: 0, translateY: "20px" }} whileInView={{ opacity: 1, translateY: 0 }} transition={{ duration: 0.7, delay: 1.8 }}>I build technology that makes life easier, turning ambitious ideas into solutions using AI, robotics, and full-stack technologies.</motion.span>
                             </p>
 
                         </div>
-                        <motion.div className="flex-1 space-y-6 mx-auto my-auto"
+                        <motion.div className="flex space-y-6 mx-auto my-auto"
                             initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.7, delay: 2 }}
@@ -56,7 +37,7 @@ export const Hero = () => {
                                 <img
                                     src="me.png"
                                     alt="Galav Sharma"
-                                    className="rounded-md mt-4 object-contain h-[30vh] md:h-full"
+                                    className="rounded-md mt-4 object-contain h-[55vh] max-md:h-[30vh]"
                                     loading="lazy"
                                 />
                             </div>

@@ -81,7 +81,7 @@ export const Experience = () => {
                                 opacity: fullyInView ? 1 : 0,
                                 x: fullyInView ? 0 : isLeft ? -50 : 50,
                             }}
-                            transition={{ duration: 0.7, delay: 0.3 }}
+                            transition={{ duration: 0.5, delay: 0.1 }}
                         // whileInView={{ opacity: 1, x: 0 }}
                         // viewport={{once: true}}
                         >
@@ -106,7 +106,6 @@ export const Experience = () => {
                                         <li key={idx}><span>{item}</span></li>
                                     ))}
                                 </ul>
-                                {/* <p className="text-muted-foreground">{item.description}</p> */}
 
                                 <div
                                     className={`hidden md:flex absolute top-6 w-4 h-4 bg-card rotate-45 ${isLeft ? "-right-2" : "-left-2"

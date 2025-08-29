@@ -61,14 +61,19 @@ const projects = [
 export const Projects = () => {
 
     return (
-        <section className="container pt-25 pb-10 overflow-y-hidden flex flex-col">
+        <section className="container pt-25 pb-15 overflow-y-hidden flex flex-col">
             <h2 className="text-4xl font-bold text-center">Projects</h2>
 
-            <div className="hidden lg:flex flex-col overflow-y-auto hide-scrollbar mt-15 gap-15 px-20">
+            <div className="hidden lg:flex flex-col overflow-y-auto hide-scrollbar mt-15 px-20">
                 {projects.map((project, idx) => (
-                    <div key={project.title} className="bg-card border-2 border-foreground/20 rounded-3xl p-8 lg:sticky" style={{
-                        top: `calc(${idx * 40}px`
-                    }}>
+                    <motion.div
+                        key={project.title}
+                        className="bg-card border-2 border-white/10 rounded-3xl p-8 mb-15"
+                        initial={{ opacity: 0.3, scale: 0.85 }}
+                        whileInView={{ opacity: 1, scale: 1 }}
+                        transition={{ duration: 0.6, ease: "easeOut" }}
+                        viewport={{ once: false, amount: 0.5 }}
+                    >
                         <div className="lg:grid lg:grid-cols-[55%_40%] lg:gap-[5%] px-5">
                             <div>
                                 <h3 className="text-2xl font-semibold mb-1 text-primary">
@@ -98,7 +103,7 @@ export const Projects = () => {
                                 />
                             </div>
                         </div>
-                    </div>
+                    </motion.div>
                 ))}
             </div>
 
@@ -110,7 +115,7 @@ export const Projects = () => {
                         initial={{ opacity: 0.3, scale: 0.85 }}
                         whileInView={{ opacity: 1, scale: 1 }}
                         transition={{ duration: 0.6, ease: "easeOut" }}
-                        viewport={{ once: false, amount: 0.5 }} // 60% visible triggers animation
+                        viewport={{ once: false, amount: 0.5 }}
                     >
                         <h3 className="text-2xl font-semibold mb-4 text-primary">
                             {project.title}
