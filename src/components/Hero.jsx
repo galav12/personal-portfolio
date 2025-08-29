@@ -23,7 +23,7 @@ export const Hero = () => {
                                 <motion.span className="text-glow text-primary" initial={{ opacity: 0, translateY: "20px" }} whileInView={{ opacity: 1, translateY: 0 }} transition={{ duration: 0.7, delay: 1.2 }}>Galav Sharma</motion.span>
                             </h1>
 
-                            <p className="text-md md:text-xl text-muted-foreground max-w-2xl mt-6 md:mt-15 mx-auto">
+                            <p className="text-md md:text-xl text-muted-foreground max-w-2xl mt-3 md:mt-15 mx-auto">
                                 <motion.span className="text-glow" initial={{ opacity: 0, translateY: "20px" }} whileInView={{ opacity: 1, translateY: 0 }} transition={{ duration: 0.7, delay: 1.8 }}>I build technology that makes life easier, turning ambitious ideas into solutions using AI, robotics, and full-stack technologies.</motion.span>
                             </p>
 

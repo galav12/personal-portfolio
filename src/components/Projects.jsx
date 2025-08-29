@@ -115,7 +115,7 @@ export const Projects = () => {
                         initial={{ opacity: 0.3, scale: 0.85 }}
                         whileInView={{ opacity: 1, scale: 1 }}
                         transition={{ duration: 0.6, ease: "easeOut" }}
-                        viewport={{ once: false, amount: 0.5 }}
+                        viewport={{ once: false, amount: 0.3 }}
                     >
                         <h3 className="text-2xl font-semibold mb-4 text-primary">
                             {project.title}
