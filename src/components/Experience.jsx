@@ -8,9 +8,9 @@ const experience = [
         logo: "kpit.png",
         dates: "Jun 2025 - Aug 2025",
         description: [
-            "Developed a scalable, flexible validation pipeline supporting diverse end-to-end autonomous driving stacks and datasets, enabling consistent, efficient, and automated large-scale testing.",
-            "Automated evaluation at both end-to-end and component levels using KPI-driven metrics, visual outputs, and RMSE-based pass/fail metrics.",
-            "Delivered a production-ready system that reduced manual effort, enhanced reliability and provided actionable insights for data-driven debugging.",
+            "Developed a scalable, Python-based validation pipeline on AWS (EC2, S3) supporting diverse end-to-end autonomous driving stacks built on AI and neural networks, enabling consistent, efficient, and automated large-scale testing.",
+            "Automated end-to-end and component level evaluations using KPI-driven metrics, visual diagnostics, and RMSE-based pass/fail logic.",
+            "Delivered production-ready system reducing manual effort by 30%, enhancing reliability, consistency, and debuggability of testing workflows.",
 
         ],
     },
@@ -20,9 +20,9 @@ const experience = [
         logo: "kpit.png",
         dates: "Jun 2024 - Aug 2024",
         description: [
-            "Reverse engineered AD stack's LiDAR detection code to develop a 3D object detection model, enhancing accuracy with point cloud data.",
-            "Optimized object detection model to substantially improve accuracy and efficiency through extensive testing and performance evaluation.",
-            "Integrated object detection model with Carla Simulator, implementing 2D and 3D bound box visualization, creating an advanced simulation environment with integrated object detection capabilities.",
+            "Reverse engineered AD stack’s LiDAR detection code to develop a 3D object detection model, enhancing point cloud data accuracy.",
+            "Optimized object detection model to improve accuracy to over 80% through extensive testing and performance evaluation.",
+            "Integrated object detection model with Carla Simulator, implementing 2D and 3D bounding box visualization, creating an advanced simulation environment with enhanced object detection capabilities.",
         ]
     },
     {
@@ -31,9 +31,9 @@ const experience = [
         logo: "peppermint.png",
         dates: "Jul 2023 - Oct 2023",
         description: [
-            "Designed and developed a mobile application for the Peppermint Services platform, using Flutter with Tele-Operational functionality to enable remote control of a robot over Wi-Fi.",
-            "Developed a user-friendly Dart-based frontend and implemented WebSockets for real-time communication between the app and the robot.",
-            "Utilized ROS2 Rosbridge to facilitate secure transmission of control commands and sensor data between the app and the robot.",
+            "Built a mobile application for the Peppermint Services platform, using Flutter with teleoperational functionality to enable remote control of a robot over Wi-Fi in a distributed system.",
+            "Implemented real-time communication using WebSockets and ROS2 Rosbridge for secure transmission of control and sensor data.",
+            "Developed a Dart frontend focused on reliability and low-latency interaction.",
         ]
     },
     {
@@ -64,7 +64,7 @@ export const Experience = () => {
         <section ref={sectionRef} className="container pt-25 pb-10 overflow-y-hidden mx-auto px-4 flex flex-col">
             <h2 className="text-3xl md:text-4xl font-bold mb-16 text-center">Work Experience</h2>
 
-            <div ref={scrollRef} className="flex flex-col overflow-y-auto hide-scrollbar border-l-2 border-primary mx-auto max-w-[90%] gap-12">
+            <div ref={scrollRef} className="flex flex-col overflow-y-auto overflow-x-hidden hide-scrollbar border-l-2 border-primary mx-auto max-w-[90%] gap-12">
                 {experience.map((item, index) => {
                     const isLeft = index % 2 === 1;
                     const ref = useRef(null);

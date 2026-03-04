@@ -5,12 +5,22 @@ const projects = [
         title: "Proxy Variable Exploration Tool - SAS",
         description:
             [
-                "Built a web-based tool to detect proxy variables for sensitive data attributes like age, gender, or race, that may introduce bias into AI models.",
-                "Integrated Correlation Analysis, FACET, and Association Rule Mining to analyze user-uploaded datasets.",
-                "Designed full-stack architecture using ReactJS frontend, Python + Flask backend, and REST APIs for seamless communication.",
+                "Built a full-stack web application enabling data scientists to analyze large CSV dataset and identify proxy variables for sensitive variables, utilizing three advanced algorithms.",
+                "Implemented a ReactJS frontend, Python backend, and Flask framework to ensure seamless communication and support scalable workflows.",
+                "Successfully deployed at SAS for data scientists to identify proxy variables, reducing model bias and supporting ethical AI development.",
             ],
         image: "proj1.png",
         github: "https://github.com/galav12/proxy-wars",
+    },
+    {
+        title: "Mantis: Automated Robotic Block Manipulation",
+        description:
+            [
+                "Architected a fully autonomous multi-object pick-and-place pipeline using ROS2, MoveIt 2, and MoveIt Task Constructor, enabling collision-aware grasping, stacking, and precise spatial arrangement of heterogeneous objects through structured task composition.",
+                "Designed and integrated a custom 7-DOF robotic arm with a prismatic gripper in URDF, reusing existing Panda MoveIt configurations to achieve deterministic motion planning and reliable multi-stage task execution in simulation.",
+            ],
+        image: "proj6.png",
+        github: "https://github.com/galav12/mantis-moveit2-arm",
     },
     {
         title: "ANAC Negotiation Agent",

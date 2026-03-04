@@ -5,15 +5,15 @@ export const About = () => {
     const skills = [
         {
             title: "Programming & Development",
-            skills: ["Java", "Python", "C++", "JavaScript", "ReactJS", "AngularJS", "Flutter", "Dart", "Arduino"],
+            skills: ["Java", "Python", "C++", "JavaScript", "React", "AngularJS", "Flutter", "Dart", "Spring", "PyTorch", "TensorFlow"],
         },
         {
             title: "Tools & Frameworks",
-            skills: ["Git", "Docker", "SQL", "REST APIs", "ROS2 Rosbridge", "Automated Testing & Validation", "Carla Simulator", "Websockets", "Bazel"],
+            skills: ["Git", "Docker", "SQL", "REST APIs", "ROS2", "Carla Simulator", "Websockets", "Bazel"],
         },
         {
             title: "Specialized Expertise",
-            skills: ["Artificial Intelligence", "Machine Learning", "Robotics", "AD/ADAS Systems", "Simulation Integration", "2D/3D Visualization"],
+            skills: ["Software Engineering", "Artificial Intelligence", "Machine Learning", "Robotics", "AD/ADAS Systems (Automotive)", "Computer Vision", "Deep Learning", "Reinforcement Learning"],
         },
     ];
 
@@ -25,7 +25,7 @@ export const About = () => {
             img_sm: "ncsu-long-sm.png",
             img_lg: "ncsu-long-lg.png",
             duration: "August 2025 - May 2026",
-            description: " ",
+            description: "•	Relevant Coursework: Artificial Intelligence, Software Engineering, Advanced Robotics, Neural Networks, Design and Analysis of Algorithms",
         },
         {
             degree: "Bachelor's of Computer Science, Artificial Intelligence Concentration",
@@ -53,7 +53,7 @@ export const About = () => {
                             <p className="text-muted-foreground text-left">
                                 <motion.span initial={{ opacity: 0, translateY: "20px" }} whileInView={{ opacity: 1, translateY: 0 }} transition={{ duration: 0.7, delay: 0.4 }}>I am a research-driven software engineer with experience in AI, robotics, and full-stack development. I thrive at the intersection of innovation and practicality, turning ambitious ideas into scalable solutions that solve real-world problems. With curiosity, adaptability, and a passion for building technology, I bring both technical depth and creative problem-solving to every project I take on.</motion.span>
                             </p>
-                            <h3 className="text-3xl font-semibold mt-5">
+                            <h3 className="text-3xl font-semibold mt-2">
                                 <motion.span initial={{ opacity: 0, translateY: "20px" }} whileInView={{ opacity: 1, translateY: 0 }} transition={{ duration: 0.7, delay: 0.6 }}>Education</motion.span>
                             </h3>
                             <div className="flex lg:hidden flex-col gap-y-6">
@@ -120,7 +120,7 @@ export const About = () => {
                                             </div>
                                             <h4 className="text-lg md:text-2xl font-semibold mb-3">{edu.school}</h4>
                                         </div>
-                                        
+
                                         <div className="flex flex-row justify-between">
                                             <p className="text-primary text-sm md:text-base mb-3 items-center">{edu.degree}</p>
                                             <p className="text-muted-foreground text-xs md:text-base  mb-3 items-center">{edu.duration}</p>
